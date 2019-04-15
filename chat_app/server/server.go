@@ -103,13 +103,13 @@ func (server *Server) addClient(client net.Conn) {
 	message := fmt.Sprintf("[INFO] %s join the server\n", server.clients[client])
 
 	if len(server.clients) > 1 {
-		client.Write([]byte("\nList of usernames in the server:\n"))
+		client.Write([]byte("List of usernames in the server:\n"))
 		for c := range server.clients {
 			client.Write([]byte(fmt.Sprintf("-> %s\n", server.clients[c])))
 		}
 	}
 
-	client.Write([]byte("\nYou can start the discussion with guests ...\n\n"))
+	client.Write([]byte("You can start the discussion with guests ...\n\n"))
 	server.sendToAll(client, message, true)
 	server.addLog(fmt.Sprintf("%s connected from %s\n", server.clients[client], client.RemoteAddr()))
 	server.receive(client)
