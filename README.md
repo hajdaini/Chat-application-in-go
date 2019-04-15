@@ -9,10 +9,12 @@ Instant messaging program that works in command prompt and writen with the go pr
 Install go compiler
 
 ## Screenshots
+
+![screenshot of the chat application](images/screenshot.png)
  
 ## How it run it :
 
-- **Create a server**
+- Create a server
   
   To create a discussion, you first must host a server :p. To do this, simply run the following command:
 
@@ -20,13 +22,13 @@ Install go compiler
   go run main.go --mode server
   ```
 
-- **Create a client**
+- Create a client
 
   ```shell
   go run main.go --mode client
   ```
 
-- then choose an username for your client in the command prompt
+- then choose an username for your client in the command prompt to start the discussion
 
 ## Logs
 
