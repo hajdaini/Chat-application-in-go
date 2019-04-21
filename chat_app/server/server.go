@@ -11,7 +11,7 @@ import (
 )
 
 /*
-Server : server "class"
+Server : server class
 @string IP : ip of the server
 @string PORT : port of the server
 @string Username : username of the client
