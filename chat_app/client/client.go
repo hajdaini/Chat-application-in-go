@@ -14,7 +14,7 @@ var wg sync.WaitGroup
 const maxLengthUsername int = 20
 
 /*
-Client : client "class"
+Client : client class
 @string IP : ip of the server
 @string PORT : port of the server
 @string Username : username of the client
